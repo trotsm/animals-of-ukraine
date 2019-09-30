@@ -5,13 +5,13 @@ import {QuillModule} from 'ngx-quill';
 @NgModule({
   imports: [
     HttpClientModule,
-    QuillModule.forRoot()],
+    QuillModule.forRoot()
+  ],
   exports: [
     HttpClientModule,
     QuillModule
   ]
 })
-
 export class SharedModule {
 
 }

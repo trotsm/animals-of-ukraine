@@ -6,7 +6,9 @@ import {Environment} from './interface';
 
 export const environment: Environment = {
   production: false,
-  apiKey: 'AIzaSyCkZnvcsNHqC_jDn_b9JN0CyfBv3B1DSl0'
+  apiKey: 'AIzaSyCkZnvcsNHqC_jDn_b9JN0CyfBv3B1DSl0',
+  fbDBUrl: 'https://animals-of-ukraine.firebaseio.com/'
+
 };
 
 /*
