@@ -1,5 +1,5 @@
 <form [formGroup]="form" (ngSubmit)="submit()">
-  <h1>Створити допис:</h1>
+  <h1>Створити новий допис</h1>
 
   <div
     class="form-control"
@@ -12,7 +12,7 @@
       class="validation"
     >
       <small *ngIf="form.get('title').errors.required">
-        Введіть назву допису:
+        Введіть заголовок допису
       </small>
     </div>
   </div>
@@ -33,7 +33,7 @@
       class="validation"
     >
       <small *ngIf="form.get('author').errors.required">
-        Введіть автора допису:
+        Введіть автора допису
       </small>
     </div>
   </div>

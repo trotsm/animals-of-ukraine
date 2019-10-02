@@ -1,5 +1,5 @@
 <form class="card" [formGroup]="form" (ngSubmit)="submit()">
-  <h2>Увійти в панель адміністратора:</h2>
+  <h2>Увійти в панель адміністратора</h2>
 
 
   <div class="alert alert-danger" *ngIf="auth.error$ | async as error">
@@ -21,10 +21,10 @@
       class="validation"
     >
       <small *ngIf="form.get('email').errors.required">
-        Заповніть поле email:
+        Введіть поле email
       </small>
       <small *ngIf="form.get('email').errors.email">
-        Поле email повинно бути електронною поштою
+        Потрібно ввести електронну пошту
       </small>
     </div>
   </div>
@@ -45,7 +45,7 @@
       <small *ngIf="form.get('password').errors.minlength">
         Пароль повинен містити не менше
         {{form.get('password').errors.minlength.requiredLength}}
-        символів. Зараз введено символів:
+        символів. Зараз введено
         {{form.get('password').errors.minlength.actualLength}}.
       </small>
     </div>
